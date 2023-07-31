@@ -1,0 +1,132 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ 
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+  /* --main-grey-background:  */
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pd-section {
+  padding: 100px 0;
+}
+
+.section-header h3 {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: var(--main-padding-bottom);
+  padding: 10px 20px;
+  font-size: 28px;
+  text-transform: uppercase;
+  border: 2px solid black;
+}
+.section-header h3::before,
+.section-header h3::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  margin-top: 8px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.section-header h3::before {
+  left: -40px;
+}
+.section-header h3::after {
+  right: -40px;
+}
+.section-header h3:hover::before,
+.section-header h3:hover::after {
+  transition: 0.7s all ease-in-out;
+  -webkit-transition: 0.7s all ease-in-out;
+  -moz-transition: 0.7s all ease-in-out;
+  -ms-transition: 0.7s all ease-in-out;
+  -o-transition: 0.7s all ease-in-out;
+  margin-top: -10px;
+  width: 50%;
+  height: 100%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.section-header h3:hover::before {
+  left: 0;
+}
+.section-header h3:hover::after {
+  right: 0;
+}
+.section-header h3:hover {
+  color: #fff;
+  border: 2px solid transparent;
+  transition: color border;
+  -webkit-transition: color border;
+  -moz-transition: color border;
+  -ms-transition: color border;
+  -o-transition: color border;
+  transition-delay: 0.7s;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Start Articles */
+

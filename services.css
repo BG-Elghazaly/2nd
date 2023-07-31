@@ -1,0 +1,49 @@
+.services {
+  background-color: #eee;
+}
+.services .section-header h3 {
+  z-index: 1;
+}
+
+.services .section-header h3:hover::after {
+  width: 51%;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 60px;
+}
+.services .srv {
+  background-color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 1px 0 10px 5px  #ccc;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+.services .srv:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.services .srv .srv-content i {
+    font-size: 70px;
+    color: #ccc;
+}
+
+.srv .srv-content h4 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+
+
